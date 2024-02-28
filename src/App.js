@@ -32,6 +32,7 @@ const routes = createHashRouter(
       path: '', element: <Layout />, children:
         [
           { index: true, element: localStorage.getItem('userToken')? <Home/> :  <SignUp /> },
+          { path: 'FreshCart-Ecommerce', element: localStorage.getItem('userToken') ? <Home /> : <SignUp /> },
           { path: 'Signup', element: <SignUp /> },
           { path: 'Login', element: <Login /> },
           { path: 'Home', element: <GaurdRouting> <Home />  </GaurdRouting> },
