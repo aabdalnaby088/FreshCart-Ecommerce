@@ -1,5 +1,5 @@
 import './App.css';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import SignUp from './components/SignUp/SignUp';
 import Login from './components/Login/Login';
@@ -26,7 +26,7 @@ import { OrdersContext, OrdersContextProvider } from './SharedData/OrderContext'
 import { Offline } from 'react-detect-offline';
 
 let reactQuery = new QueryClient();
-const routes = createBrowserRouter(
+const routes = createHashRouter(
   [
     {
       path: '', element: <Layout />, children:
