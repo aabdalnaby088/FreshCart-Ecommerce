@@ -1,0 +1,21 @@
+.login
+{
+    height: 60vh;
+}
+
+.login_btn {
+    background-color: #0aad0a;
+    transition: all 0.4s;
+}
+
+.login_btn:hover {
+    background-color: #0e990e;
+
+}
+
+
+.loginTitle
+{
+    color: #0aad0a;
+    font-weight: 500;
+}

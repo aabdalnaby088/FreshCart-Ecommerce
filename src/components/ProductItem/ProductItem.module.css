@@ -1,0 +1,8 @@
+.iconFav
+{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+color: #ff0000;
+}

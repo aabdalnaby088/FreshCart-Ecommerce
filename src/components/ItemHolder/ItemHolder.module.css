@@ -1,0 +1,46 @@
+.layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0aad0a98;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s 0.3s;
+    border-radius: 10px;
+    color: white;
+    /* Set text color to white for better visibility */
+}
+
+img {
+    border-radius: 10px;
+    transition: opaciy 0.3s;
+    /* Add transition for smooth image opacity change */
+}
+
+.item {
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: #0aad0a98 1px solid;
+    overflow: hidden;
+}
+
+.item:hover {
+    transform: scale(1.08);
+}
+
+.item:hover img {
+    opacity: 1;
+}
+
+.item:hover .layer {
+    opacity: 1;
+}
+
+.layer h3 {
+    color: white;
+}

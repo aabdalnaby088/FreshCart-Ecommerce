@@ -1,0 +1,37 @@
+.slide1
+{
+    background-color : #f3f0e7;
+}
+.slide2
+{
+    background-color : #d6ebee;
+}
+.slide3
+{
+    background-color : #f6e7d2;
+}
+
+.slickSlider
+{
+    display: flex !important; 
+    justify-content: center !important;
+}
+
+@media (max-width: 770px) {
+    .slickSlider {
+        display: block !important;
+    }
+    .slickSlider img {
+        width: 600px !important;
+        }
+}
+
+@media (max-width: 500px) {
+    .slickSlider {
+    display: block !important;
+    }
+    .slickSlider img
+    {
+        width: 300px !important;
+    }
+}

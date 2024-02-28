@@ -1,0 +1,24 @@
+.submit_btn {
+    background-color: #0aad0a;
+    transition: all 0.4s;
+}
+
+.submit_btn:hover {
+    background-color: #0e990e;
+    
+}
+
+
+.registerTitle
+{
+    color: #0aad0a;
+    font-weight: 500;
+}
+
+
+.eyePass
+{
+    top: 30%;
+    right: 4%;
+    cursor: pointer;
+}
