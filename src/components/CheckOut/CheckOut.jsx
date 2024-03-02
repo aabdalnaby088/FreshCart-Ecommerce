@@ -15,7 +15,6 @@ let navg = useNavigate();
 
     // setting user params to get me the params in the url 
     let params = useParams();
-
     // using yup to validate the form 
 
     let validate = yup.object(
@@ -43,8 +42,10 @@ let navg = useNavigate();
     //function to redirect you and handle online payment 
 
     async function OnlinePayment(values) {
+        
         let res = await PayByCredit(params.id, values).catch(err => {});
         if (res?.data.status == 'success') {
+            console.log(res.data);
             window.open(res.data.session.url,'_self');
         }
     }

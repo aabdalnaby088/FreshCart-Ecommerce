@@ -16,7 +16,7 @@ export default function ProductDetails() {
 
     // get the product id passed in the url as parameter
     let { ProductId } = useParams();
-console.log(ProductId) ;
+// console.log(ProductId) ;
     // function to get the product details from the Api
     function getProductDetails(queryData) {
             return  axios.get(`https://ecommerce.routemisr.com/api/v1/products/${queryData.queryKey[1]}`);

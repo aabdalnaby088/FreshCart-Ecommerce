@@ -165,8 +165,8 @@ let [isLoading , setIsLoading] = useState(false);
               <input onBlur={form1.handleBlur} value={form1.values.password} onChange={form1.handleChange} type="password" className={(form1.touched.password && form1.errors.password) ? 'form-control my-3 is-invalid' : 'form-control my-3'}
                 name='password' id='password' />
               <i className={`fa-solid fa-eye-slash position-absolute ${styles.eyePass}`}></i>
-</div>
             {(form1.touched.password && form1.errors.password) && <div className='invalid-feedback mb-3'>{form1.errors.password}</div>}
+</div>
 
             {/* rePassword input */}
 
@@ -175,9 +175,9 @@ let [isLoading , setIsLoading] = useState(false);
 <div className="position-relative">
               <input onBlur={form1.handleBlur} value={form1.values.rePassword} onChange={form1.handleChange} type="password" className={(form1.errors.rePassword && form1.touched.rePassword) ? 'form-control is-invalid my-3' : 'form-control my-3'} name='rePassword' id='repasword' />
               <i className={`fa-solid fa-eye-slash rePasswordIcon position-absolute ${styles.eyePass}`}></i>
+            {(form1.touched.rePassword&& form1.errors.rePassword) && <div className='invalid-feedback mb-3'>{form1.errors.rePassword}</div>}
 </div>
 
-            {(form1.touched.rePassword&& form1.errors.rePassword) && <div className='invalid-feedback mb-3'>{form1.errors.rePassword}</div>}
 
             {/* <input onChange={addNme} type="text" className='form-control my-3' name='name'  />
           <input onChange={addNme} type="tel" className='form-control my-3' name='phone' />
